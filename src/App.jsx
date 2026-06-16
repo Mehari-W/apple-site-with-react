@@ -1,3 +1,4 @@
+import { Alert } from "bootstrap";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
