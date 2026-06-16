@@ -65,14 +65,13 @@ const Header = () => {
                     Support
                   </a>
                 </li>
-                {/* Added descriptive alt tags for image assets */}
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/search/">
+                  <a className="nav-link js-scroll-trigger" href="#search/">
                     <img src={search} alt="Search" />
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/cart/">
+                  <a className="nav-link js-scroll-trigger" href="#cart/">
                     <img src={cart} alt="Cart" />
                   </a>
                 </li>
