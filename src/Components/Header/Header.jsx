@@ -4,10 +4,8 @@ import search from "../../assets/images/icons/search-icon-sm.png";
 import cart from "../../assets/images/icons/cart-sm.png";
 
 const Header = () => {
-  // የሜኑውን ክፍት/ዝግ መሆን የሚቆጣጠር State
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // ሜኑውን Toggle የሚያደርግ ፊንክሽን
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -21,9 +19,9 @@ const Header = () => {
             <button
               className="navbar-toggler"
               type="button"
-              onClick={toggleMenu} // የ onClick ኢቨንት ተጨምሯል
+              onClick={toggleMenu}
               aria-controls="appleNavbar"
-              aria-expanded={isMenuOpen} // Stateን መሰረት ያደረገ
+              aria-expanded={isMenuOpen} 
               aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
@@ -32,8 +30,6 @@ const Header = () => {
             <a className="navbar-brand mx-auto" href="#">
               <img src={icon} alt="Apple Logo" />
             </a>
-
-            {/* isMenuOpen 'true' ሲሆን 'show' የሚለውን ክላስ ይጨምራል */}
             <div 
               className={`navbar-collapse collapse ${isMenuOpen ? "show" : ""}`} 
               id="appleNavbar"
